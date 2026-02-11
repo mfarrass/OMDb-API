@@ -36,6 +36,17 @@
                     0 0 10px rgba(192, 57, 43, .6),
                     0 0 30px rgba(192, 57, 43, .4);
             }
+
+            @media (max-width:768px){
+                .text-404 {
+                    font-size: 95px;
+                }
+
+                .text-desc {
+                    font-size: 14px;
+                }
+            }
+
         </style>
     @endpush
 

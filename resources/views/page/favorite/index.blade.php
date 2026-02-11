@@ -23,6 +23,7 @@
                 justify-content: center;
                 z-index: 10;
                 transition: .25s;
+                backdrop-filter: blur(6px);
             }
 
             .delete-btn:hover {
@@ -30,13 +31,8 @@
                 transform: scale(1.1);
             }
 
-            .row {
-                margin-top: 20px;
-            }
-
             .movie-card {
                 position: relative;
-                padding: 12px;
                 transition: .25s;
             }
 
@@ -63,10 +59,10 @@
 
                 @if (count($favorites) > 0)
 
-                    <div class="row">
+                    <div class="favorite-grid">
 
                         @foreach ($favorites as $fav)
-                            <div class="col-3 movie-card">
+                            <div class="movie-card">
 
                                 <form method="POST" action="{{ route('favorite.toggle') }}">
                                     {{ csrf_field() }}

@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Nonton Film - Favorite Movies</title>
+
+<!-- GOOGLE FONTS -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+
+<!-- OWL CAROUSEL -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
+<!-- BOX ICONS -->
+<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+<!-- APP CSS -->
+<link rel="stylesheet" href="grid.css">
+<link rel="stylesheet" href="app.css">
+
+<style>
+
+/* tombol delete overlay */
+.delete-btn{
+    position:absolute;
+    top:1px;
+    right:16px;
+    width:38px;
+    height:38px;
+    border-radius:5%;
+    border:none;
+    background:var(--main-color);
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:10;
+    transition:.25s;
+}
+
+.delete-btn:hover{
+    background:#e74c3c;
+    transform:scale(1.1);
+}
+
+/* biar posisi absolute delete benar */
+.movie-card{
+    position:relative;
+}
+
+/* ===== STICKY FOOTER FIX ===== */
+
+.page-wrapper{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+}
+
+.main-content{
+    flex:1;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- ✅ WRAPPER UTAMA -->
+<div class="page-wrapper">
+    
+    <!-- NAV -->
+    <div class="nav-wrapper">
+        <div class="container">
+            <div class="nav">
+                <a href="#" class="logo">
+                    <i class='bx bxs-camera-movie bx-tada main-color'></i>Nonton <span class="main-color">F</span>ilm
+                </a>
+
+                <ul class="nav-menu" id="nav-menu">
+                    <!-- 🌐 LANGUAGE DROPDOWN -->
+                    <li class="lang-dropdown">
+
+                        <div class="lang-selected" id="selected-lang">
+
+                            <img 
+                            id="selected-flag"
+                            src="https://flagcdn.com/w20/us.png">
+
+                            <span id="selected-text">EN</span>
+
+                            <i class='bx bx-chevron-down'></i>
+                        </div>
+
+
+                        <div class="lang-menu">
+
+                            <div class="lang-item"
+                                data-lang="ID"
+                                data-flag="https://flagcdn.com/w20/id.png">
+
+                                <img src="https://flagcdn.com/w20/id.png">
+                                Indonesia
+                            </div>
+
+
+                            <div class="lang-item"
+                                data-lang="EN"
+                                data-flag="https://flagcdn.com/w20/us.png">
+
+                                <img src="https://flagcdn.com/w20/us.png">
+                                English
+                            </div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="film-favorite.html" class="favorite-icon">
+                            <i class='bx bxs-heart'></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <div class="hamburger"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- END NAV -->
+
+
+    <!-- ✅ MAIN CONTENT -->
+    <main class="main-content">
+
+        <div class="section" style="margin: 15px;">
+            <div class="container">
+
+                <div class="section-header">
+                    MY FAVORITE MOVIES 
+                </div>
+
+                <div class="row">
+
+                    <!-- CARD -->
+                    <div class="col-3 movie-card">
+                        
+                        <button class="delete-btn" onclick="removeCard(this)">
+                            <i class='bx bx-x'></i>
+                        </button>
+
+                        <a href="detail-film.html" class="movie-item">
+                            <img src="./images/movies/transformer.jpg" />
+                            <div class="movie-item-content">
+                                <div class="movie-item-title">Transformer</div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="col-3 movie-card">
+                        
+                        <button class="delete-btn" onclick="removeCard(this)">
+                            <i class='bx bx-x'></i>
+                        </button>
+
+                        <a href="detail-film.html" class="movie-item">
+                            <img src="./images/movies/blood-shot.jpg" />
+                            <div class="movie-item-content">
+                                <div class="movie-item-title">Bloodshot</div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="col-3 movie-card">
+                        
+                        <button class="delete-btn" onclick="removeCard(this)">
+                            <i class='bx bx-x'></i>
+                        </button>
+
+                        <a href="detail-film.html" class="movie-item">
+                            <img src="./images/movies/call.jpg" />
+                            <div class="movie-item-content">
+                                <div class="movie-item-title">Call</div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <!-- CARD -->
+                    <div class="col-3 movie-card">
+                        
+                        <button class="delete-btn" onclick="removeCard(this)">
+                            <i class='bx bx-x'></i>
+                        </button>
+
+                        <a href="detail-film.html" class="movie-item">
+                            <img src="./images/movies/hunter-killer.jpg" />
+                            <div class="movie-item-content">
+                                <div class="movie-item-title">Hunter Killer</div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+</div>
+<!-- ✅ END WRAPPER -->
+
+
+<!-- ✅ FOOTER -->
+<div class="copyright">
+    <a href="#" class="logo">
+        <i class='bx bxs-camera-movie bx-tada main-color'></i>Nonton <span class="main-color">F</span>ilm
+    </a>
+
+    <div>
+        © Copyright 2026 -
+        <a href="https://www.youtube.com/channel/UCnNgtK4tGlWcceXVzoyTg8Q" target="_blank">
+            Muhamad Farras
+        </a>
+    </div>
+</div>
+
+
+<script src="lang.js"></script>
+<script>
+
+/*
+hapus card static
+*/
+function removeCard(button){
+
+    const card = button.closest(".movie-card");
+
+    card.style.transition=".3s";
+    card.style.transform="scale(.8)";
+    card.style.opacity="0";
+
+    setTimeout(()=>{
+        card.remove();
+    },250);
+
+}
+
+</script>
+
+</body>
+</html>

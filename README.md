@@ -1,1 +1,150 @@
-# OMDb-API
+![Laravel](https://img.shields.io/badge/Laravel-5.5-red)
+![PHP](https://img.shields.io/badge/PHP-%3E%3D7.0-blue)
+![API](https://img.shields.io/badge/API-OMDb-green)
+![License](https://img.shields.io/badge/license-MIT-lightgrey)
+
+# OMDb-API - 🎬 Article Film
+
+**Article Film** is a movie discovery web application powered by the **OMDb API**, built with **Laravel 5.5** using a clean **Service-Oriented Architecture**.
+
+Users can search movies, view detailed information, manage favorites, and enjoy a responsive multilingual interface.
+
+---
+
+## 🚀 Features
+
+* Movie Search (OMDb API)
+* Movie Detail Page
+* Session-based Favorite System
+* Infinite Scroll
+* Multi-language (EN / ID)
+* Hero Carousel
+* Responsive UI
+
+---
+
+## 🧠 Architecture
+
+This project applies **Service-Oriented Architecture** on top of Laravel MVC:
+
+```
+Controller → Service Layer → OMDb API
+```
+
+All API communication is centralized in:
+
+```
+app/Services/OmdbService.php
+```
+
+**Advantages:**
+
+* Cleaner controllers
+* Reusable logic
+* Easier maintenance
+* Better scalability
+
+---
+
+## 🧰 Tech Stack
+
+### Backend
+
+* Laravel 5.5
+* PHP >= 7.0
+* Guzzle HTTP Client
+* Session Management
+
+### Frontend
+
+* Blade Template Engine
+* Owl Carousel
+* Boxicons
+* Custom CSS & Vanilla JS
+
+🎥 API: https://www.omdbapi.com/
+
+---
+
+## 📚 Core Libraries
+
+| Library           | Purpose        |
+| ----------------- | -------------- |
+| laravel/framework | Core framework |
+| guzzlehttp/guzzle | HTTP client    |
+| fideloper/proxy   | Trusted proxy  |
+| laravel/tinker    | Debugging      |
+| phpunit / mockery | Testing        |
+
+---
+
+## 🌍 Multi-Language
+
+Supported languages:
+
+* 🇺🇸 English
+* 🇮🇩 Indonesian
+
+Implemented using **Laravel Localization + custom SetLocale middleware** with session persistence.
+
+---
+
+## 📸 Screenshots
+
+Create this folder:
+
+```
+docs/screenshots/
+```
+
+### Home
+
+![Home](docs/screenshots/home.png)
+
+### Movie Detail
+
+![Detail](docs/screenshots/detail.png)
+
+### Favorite Movies
+
+![Favorites](docs/screenshots/favorites.png)
+
+### Multi Language
+
+![Language](docs/screenshots/language.png)
+
+---
+
+## ⚙️ Installation
+
+```bash
+git clone https://github.com/yourusername/article-film.git
+composer install
+cp .env.example .env
+php artisan key:generate
+```
+
+Add OMDb API key:
+
+```
+OMDB_KEY=your_api_key
+```
+
+Run the app:
+
+```bash
+php artisan serve
+```
+
+Open:
+
+```
+http://127.0.0.1:8000
+```
+
+---
+
+## 👨‍💻 Author
+
+**Muhamad Farras**
+GitHub: https://github.com/mfarrass

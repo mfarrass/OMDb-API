@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nonton Film - Movie Detail</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="grid.css" />
+    <link rel="stylesheet" href="app.css" />
+
+    <style>
+      .movie-detail-layout {
+        display: flex;
+        gap: 40px;
+        align-items: flex-start;
+      }
+
+      .movie-video {
+        flex: 1.6;
+      }
+
+      .movie-video iframe {
+        width: 100%;
+        height: 420px;
+        border-radius: 12px;
+      }
+
+      .movie-detail-info {
+        flex: 1;
+      }
+
+      .movie-detail-info .item-content-title {
+        font-size: 2.5rem;
+        line-height: 3rem;
+        font-weight: 800;
+      }
+
+      .movie-detail-info .movie-infos {
+        margin-top: 10px;
+        gap: 15px;
+      }
+
+      .movie-detail-info .movie-info {
+        font-size: 0.9rem;
+      }
+
+      .movie-detail-info .item-content-description {
+        margin-top: 20px;
+        font-size: 1rem;
+        color: #cfcfcf;
+        line-height: 1.6;
+      }
+
+      .movie-detail-info .btn {
+        margin-top: 10px;
+      }
+
+      /* ✅ ini bikin halaman pendek tetap full */
+      main {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .section {
+        flex: 1;
+      }
+
+      @media (max-width: 900px) {
+        .movie-detail-layout {
+          flex-direction: column;
+        }
+
+        .movie-video iframe {
+          height: 250px;
+        }
+
+        .movie-detail-info .item-content-title {
+          font-size: 2rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAV -->
+    <div class="nav-wrapper">
+      <div class="container">
+        <div class="nav">
+          <a href="#" class="logo">
+            <i class='bx bxs-camera-movie bx-tada main-color'></i>Nonton <span class="main-color">F</span>ilm
+          </a>
+
+            <ul class="nav-menu" id="nav-menu">
+
+            <!-- 🌐 LANGUAGE DROPDOWN -->
+            <li class="lang-dropdown">
+
+                <div class="lang-selected" id="selected-lang">
+
+                    <img 
+                    id="selected-flag"
+                    src="https://flagcdn.com/w20/us.png">
+
+                    <span id="selected-text">EN</span>
+
+                    <i class='bx bx-chevron-down'></i>
+                </div>
+
+
+                <div class="lang-menu">
+
+                    <div class="lang-item"
+                        data-lang="ID"
+                        data-flag="https://flagcdn.com/w20/id.png">
+
+                        <img src="https://flagcdn.com/w20/id.png">
+                        Indonesia
+                    </div>
+
+
+                    <div class="lang-item"
+                        data-lang="EN"
+                        data-flag="https://flagcdn.com/w20/us.png">
+
+                        <img src="https://flagcdn.com/w20/us.png">
+                        English
+                    </div>
+
+                </div>
+
+            </li>
+
+            <!-- FAVORITE -->
+            <li>
+                <a href="film-favorite.html">
+                <i class="bx bxs-heart"></i>
+                </a>
+            </li>
+
+            </ul>
+
+
+          <div class="hamburger-menu">
+            <div class="hamburger"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END NAV -->
+
+    <!-- ✅ MAIN WRAPPER -->
+    <main>
+      <div class="section">
+        <div class="container">
+          <div class="section-header">Detail Film</div>
+
+          <div class="movie-detail-layout">
+            <!-- VIDEO -->
+            <div class="movie-video">
+              <iframe
+                src="https://www.youtube.com/embed/AntcyqJ6brc"
+                frameborder="0"
+                allowfullscreen
+              >
+              </iframe>
+            </div>
+
+            <!-- INFO -->
+            <div class="movie-detail-info">
+              <div class="item-content-title">
+                Transformers: The Last Knight
+              </div>
+
+              <div class="movie-infos">
+                <div class="movie-info">⭐ 9.5</div>
+                <div class="movie-info">⏱ 120 mins</div>
+                <div class="movie-info">HD</div>
+                <div class="movie-info">16+</div>
+              </div>
+
+              <div class="item-content-description">
+                Autobots and Decepticons are at war, with humans caught in the
+                middle. Optimus Prime is gone. The key to saving the future lies
+                buried in the secrets of the past.
+              </div>
+
+              <div
+                style="
+                  margin-top: 30px;
+                  display: flex;
+                  gap: 15px;
+                  flex-wrap: wrap;
+                "
+              >
+                <a href="#" class="btn btn-hover">
+                  <i class="bx bx-play"></i>
+                  <span>Watch Now</span>
+                </a>
+
+                <a href="film-favorite.html" class="btn btn-hover">
+                  <i class="bx bx-heart"></i>
+                  <span>Add Favorite</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- ✅ END MAIN -->
+
+    <!-- FOOTER -->
+    <div class="copyright">
+      <a href="#" class="logo">
+        <i class='bx bxs-camera-movie bx-tada main-color'></i>Nonton <span class="main-color">F</span>ilm
+      </a>
+
+      <div>
+        © Copyright 2026 - 
+        <a
+          href="https://www.youtube.com/channel/UCnNgtK4tGlWcceXVzoyTg8Q"
+          target="_blank"
+        >
+          Muhamad Farras
+        </a>
+      </div>
+    </div>
+    <script src="lang.js"></script>
+  </body>
+</html>

@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Nonton Film - Login</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- APP CSS -->
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="app.css">
+
+<style>
+
+/* FULL CENTER */
+.login-page{
+    height:80vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* BOX LOGIN */
+.login-box{
+    width:420px;
+    padding:50px;
+    background:rgba(34,31,31,.95);
+    border-radius:12px;
+    box-shadow:
+        0 0 20px rgba(255, 255, 255, 0.327),
+        0 0 60px rgba(0,0,0,.6);
+}
+
+/* TITLE */
+.login-title{
+    font-size:32px;
+    font-weight:800;
+    text-align:center;
+    /* margin-bottom:30px; */
+}
+
+/* INPUT */
+.login-input{
+    width:100%;
+    padding:14px;
+    margin-bottom:20px;
+    border:none;
+    border-radius:6px;
+    background:#2c2c2c;
+    color:white;
+    font-size:16px;
+    outline:none;
+    transition:.3s;
+}
+
+.login-input:focus{
+    border:1px solid var(--main-color);
+    box-shadow:0 0 10px rgba(192,57,43,.5);
+}
+
+/* BUTTON */
+.login-btn{
+    width:100%;
+    justify-content:center;
+    padding:14px;
+    font-size:18px;
+}
+
+/* background cinematic */
+body{
+    background:
+        linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.95)),
+        url('./images/transformer-banner.jpg');
+    background-size:cover;
+    background-position:center;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAV -->
+<div class="nav-wrapper">
+    <div class="container">
+        <div class="nav">
+            <a href="index.html" class="logo">
+                <i class='bx bxs-camera-movie bx-tada main-color'></i>Nonton <span class="main-color">F</span>ilm
+            </a>
+
+            <ul class="nav-menu" id="nav-menu">
+                <!-- 🌐 LANGUAGE DROPDOWN -->
+                <li class="lang-dropdown">
+
+                    <div class="lang-selected" id="selected-lang">
+
+                        <img 
+                        id="selected-flag"
+                        src="https://flagcdn.com/w20/us.png">
+
+                        <span id="selected-text">EN</span>
+
+                        <i class='bx bx-chevron-down'></i>
+                    </div>
+
+
+                    <div class="lang-menu">
+
+                        <div class="lang-item"
+                            data-lang="ID"
+                            data-flag="https://flagcdn.com/w20/id.png">
+
+                            <img src="https://flagcdn.com/w20/id.png">
+                            Indonesia
+                        </div>
+
+
+                        <div class="lang-item"
+                            data-lang="EN"
+                            data-flag="https://flagcdn.com/w20/us.png">
+
+                            <img src="https://flagcdn.com/w20/us.png">
+                            English
+                        </div>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- LOGIN -->
+<div class="login-page">
+
+    <div class="login-box">
+        <div class="login-title">
+            <a href="#" class="logo">
+                <i class='bx bxs-camera-movie bx-tada main-color'></i>Nonton <span class="main-color">F</span>ilm
+            </a>
+        </div>
+
+        <form>
+
+            <input 
+                type="text" 
+                placeholder="Username"
+                class="login-input"
+                required
+            >
+
+            <input 
+                type="password" 
+                placeholder="Password"
+                class="login-input"
+                required
+            >
+
+            <button class="btn btn-hover login-btn">
+                <i class='bx bx-log-in'></i>
+                <span>Login</span>
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+    <!-- COPYRIGHT SECTION -->
+    <div class="copyright">
+         <a href="#" class="logo">
+                <i class='bx bxs-camera-movie bx-tada main-color'></i>Nonton <span class="main-color">F</span>ilm
+         </a>
+        <div>
+        © Copyright 2026 - <a href="https://www.youtube.com/channel/UCnNgtK4tGlWcceXVzoyTg8Q" target="_blank">
+            Muhamad Farras</a>
+        </div>
+    </div>
+    <!-- END COPYRIGHT SECTION -->
+<script src="lang.js"></script>
+</body>
+</html>

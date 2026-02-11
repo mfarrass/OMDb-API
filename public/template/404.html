@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>404 - Page Not Found</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- APP CSS -->
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="app.css">
+
+<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+<style>
+
+/* CENTER FULL SCREEN */
+.page-404{
+    height:85vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    flex-direction:column;
+}
+
+/* BIG 404 */
+.text-404{
+    font-size:140px;
+    font-weight:900;
+    color:var(--main-color);
+    letter-spacing:8px;
+}
+
+/* subtitle */
+.text-desc{
+    font-size:22px;
+    margin-top:10px;
+    opacity:.8;
+}
+
+/* tombol */
+.back-home{
+    margin-top:40px;
+}
+
+/* glow effect biar cinematic */
+.text-404{
+    text-shadow:
+        0 0 10px rgba(192,57,43,.6),
+        0 0 30px rgba(192,57,43,.4);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAV -->
+<div class="nav-wrapper">
+    <div class="container">
+        <div class="nav">
+            <a href="index.html" class="logo">
+                <i class='bx bxs-camera-movie bx-tada main-color'></i>Article <span class="main-color">F</span>ilm
+            </a>
+
+            <ul class="nav-menu" id="nav-menu">
+                <!-- 🌐 LANGUAGE DROPDOWN -->
+                <li class="lang-dropdown">
+
+                    <div class="lang-selected" id="selected-lang">
+
+                        <img 
+                        id="selected-flag"
+                        src="https://flagcdn.com/w20/us.png">
+
+                        <span id="selected-text">EN</span>
+
+                        <i class='bx bx-chevron-down'></i>
+                    </div>
+
+
+                    <div class="lang-menu">
+
+                        <div class="lang-item"
+                            data-lang="ID"
+                            data-flag="https://flagcdn.com/w20/id.png">
+
+                            <img src="https://flagcdn.com/w20/id.png">
+                            Indonesia
+                        </div>
+
+
+                        <div class="lang-item"
+                            data-lang="EN"
+                            data-flag="https://flagcdn.com/w20/us.png">
+
+                            <img src="https://flagcdn.com/w20/us.png">
+                            English
+                        </div>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- 404 CONTENT -->
+<div class="page-404">
+
+    <div class="text-404">
+        404
+    </div>
+
+    <div class="text-desc">
+        Oops... halaman yang kamu cari tidak ditemukan 🎬
+    </div>
+
+    <div class="back-home">
+        <a href="index.html" class="btn btn-hover">
+            <i class='bx bx-home'></i>
+            <span>Kembali ke Home</span>
+        </a>
+    </div>
+
+</div>
+
+    <!-- COPYRIGHT SECTION -->
+    <div class="copyright">
+         <a href="#" class="logo">
+                <i class='bx bxs-camera-movie bx-tada main-color'></i>Article <span class="main-color">F</span>ilm
+         </a>
+        <div>
+        © Copyright 2026 - <a href="https://www.youtube.com/channel/UCnNgtK4tGlWcceXVzoyTg8Q" target="_blank">
+            Muhamad Farras</a>
+        </div>
+    </div>
+    <!-- END COPYRIGHT SECTION -->
+
+<script src="lang.js"></script>
+</body>
+</html>

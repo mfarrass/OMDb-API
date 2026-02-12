@@ -157,6 +157,12 @@ docs/screenshots/
 
 ---
 
+## 📬 API Documentation (Postman)
+
+<img src="docs/screenshots/dokumentasi-postman.png" width="100%">
+
+---
+
 ## ⚙️ Installation
 
 ```bash

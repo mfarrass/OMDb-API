@@ -169,7 +169,8 @@ php artisan key:generate
 Add your OMDb API key:
 
 ```
-OMDB_KEY=your_api_key
+OMDB_API_KEY=eee41fe7
+OMDB_BASE_URL=http://www.omdbapi.com/
 ```
 
 Run the application:

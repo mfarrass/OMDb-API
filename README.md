@@ -97,6 +97,28 @@ docs/screenshots/
 
 ---
 
+## 🚪 Login
+
+Use the following demo account to access the application:
+
+```
+Username : aldmic
+Password : 123abc123
+```
+
+<table>
+<tr>
+<td align="center"><b>Desktop</b></td>
+<td align="center"><b>Mobile</b></td>
+</tr>
+<tr>
+<td><img src="docs/screenshots/login-desktop.png" width="100%"></td>
+<td><img src="docs/screenshots/login-mobile.png" width="60%"></td>
+</tr>
+</table>
+
+---
+
 ## 🏠 Home Page
 
 <table>
